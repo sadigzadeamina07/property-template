@@ -1,5 +1,0 @@
-imgdata=[
-    {
-       img:"img/" 
-    }
-]
