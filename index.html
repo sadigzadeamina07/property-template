@@ -19,11 +19,16 @@
 <body>
     <header>
         <div class="container  mx-auto  relative">
-            <div
-                class="absolute left-1/2 rounded-xl -translate-x-1/2 w-[95%]  z-50  bg-[#005555] top-[20px] text-white">
+            <div id="fixedheader"
+                class="fixed left-1/2 rounded-xl -translate-x-1/2 w-[80%] transition-transform scale-100 duration-300 ease-in-out z-90 bg-[#005555] top-[20px] text-white">
                 <div class="flex justify-between items-center px-4 py-5 mx-[5px]">
                     <h1 class="text-2xl font-semibold  ml-[34px] md:ml-0">Property</h1>
-                    <div class="md:hidden flex mr-[34px] md:ml-0"><i class="fa-light fa-bars text-3xl"></i></div>
+                    <div class="md:hidden flex  mr-[34px] md:ml-0 ">
+                        <i onclick="openthebar()"  id="menubar" class="fa-light fa-bars text-3xl"></i>
+                 
+                    </div>
+             
+           
                     <ul class="flex gap-8 hidden md:flex">
                         <li><a href="">Home</a></li>
                         <li><a href="">Properties</a></li>
@@ -31,13 +36,10 @@
                         <li><a href="">About</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
-
-
                 </div>
-
             </div>
             <div
-                class="fade-out opacity-0 translate-y-20 transition-all duration-1500 ease-out absolute  text-center top-[40vh] left-1/2  w-[90%] -translate-x-1/2 -translate-y-1/2 z-50 text-center text-white">
+                class="fadeout opacity-0 translate-y-20 transition-all duration-1500 ease-out absolute   text-center top-[40vh] left-1/2  w-[90%] -translate-x-1/2 -translate-y-1/2 z-50 text-center text-white">
                 <p class="text-[40px] font-semibold mb-[25px]">
                     Easiest way to find your dream home
                 </p>
@@ -63,8 +65,21 @@
             </div>
 
         </div>
+<div id="menuofbar" class="hidden bg-white fixed md:hidden transition-transform duration-1000 translate-x-full right-0 top-0 bottom-0 w-[70%] z-100 overflow-y-auto p-7">
+                                         <div class="flex justify-end">
+        <i onclick="closethebar()" class="fa-solid fa-xmark"></i>
+    </div>
+       <ul class="flex flex-col gap-8  text-black  ">
+                        <li class="hover:text-[#00204a] "><a href="">Home</a></li>
+                        <li class="hover:text-[#00204a] "><a href="">Properties</a></li>
+                        <li class="hover:text-[#00204a] "><a href="">Services</a></li>
+                        <li class="hover:text-[#00204a] "><a href="">About</a></li>
+                        <li class="hover:text-[#00204a] "><a href="">Contact Us</a></li>
+                    </ul>
 
+                    </div>
     </header>
+    
     <main>
         <div class="container mx-auto pt-[4rem]">
             <div class="">

@@ -24,9 +24,40 @@ for (let i = 1; i <= 8; i++) {
 
 }
 window.addEventListener("load", () => {
-    const el = document.querySelector(".fade-out");
+    const el = document.querySelector(".fadeout");
     setTimeout(() => {
         el.classList.remove("opacity-0", "translate-y-20");
         el.classList.add("opacity-100", "translate-y-0");
     }, 900);
 })
+window.addEventListener("scroll", ()=>{
+    const fixedheader=document.getElementById('fixedheader')
+    if(window.scrollY>120) {
+          fixedheader.classList.remove("scale-100");
+                fixedheader.classList.add("scale-110");
+    }
+        else {
+            
+ fixedheader.classList.remove("scale-110");
+ fixedheader.classList.add("scale-100");
+        }
+
+
+})
+    let menubar=document.querySelector('.menubar')
+    let menu=document.querySelector('#menuofbar')
+function openthebar(){ 
+         menu.classList.remove('hidden') 
+      setTimeout(()=>{
+             menu.classList.remove('translate-x-full') 
+       menu.classList.add('translate-x-0') 
+    },500)
+
+
+    }
+function closethebar(){ 
+     menu.classList.add('translate-x-full') 
+    setTimeout(()=>{
+menu.classList.add('hidden')
+    },1000)
+ }
