@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
     <title>Document</title>
     <style>
         .container {
@@ -23,7 +20,7 @@
     <header>
         <div class="container  mx-auto  relative">
             <div
-                class="absolute left-1/2 rounded-xl -translate-x-1/2 w-[85%] md:w-[95%]  z-50  bg-[#005555] top-[20px] text-white">
+                class="absolute left-1/2 rounded-xl -translate-x-1/2 w-[95%]  z-50  bg-[#005555] top-[20px] text-white">
                 <div class="flex justify-between items-center px-4 py-5 mx-[5px]">
                     <h1 class="text-2xl font-semibold  ml-[34px] md:ml-0">Property</h1>
                     <div class="md:hidden flex mr-[34px] md:ml-0"><i class="fa-light fa-bars text-3xl"></i></div>
@@ -69,24 +66,56 @@
 
     </header>
     <main>
-        <div class="container mx-auto py-[4rem]">
-            <div>
-                <div class="flex flex-wrap  md:justify-between">
-                    <h1 class="text-[36px] text-[#00204a] font-semibold">Popular Properties</h1>
+        <div class="container mx-auto pt-[4rem]">
+            <div class="">
+                <div class="flex flex-wrap   items-center flex-col md:flex-row md:mx-[10px] md:justify-between">
+                    <h1 class="text-[36px]  text-[#00204a] font-semibold">Popular Properties</h1>
                     <button
-                        class="bg-[#005555] rounded-[30px] px-[30px] py-[10px] md:py-[15px] mt-[25px] md:mt-0 text-white">View
+                        class="bg-[#005555] rounded-[30px] px-[30px] py-[10px] md:py-[15px] mt-[20px] md:mt-0 text-white">View
                         all properties</button>
                 </div>
-                <div class="swiper mySwiper2 mt-[50px]">
-                    <div class="swiper-wrapper myswiper2 min-h-[70vh]">
+                <div class="swiper relative mySwiper2 mt-[50px]">
+                    <div class="swiper-wrapper myswiper2  mb-[70px]">
                     </div>
-                    <div class="swiper-pagination mt-[50px]"></div>
+                    <div class="swiper-pagination  absolute "></div>
                 </div>
             </div>
 
             <div class="py-[30px]">
-
+                <div class="grid  text-[#00204a] text-center grid-cols-1 md:grid-cols-4">
+<div class="flex flex-col gap-3 mb-[30px]">
+    <i class="fa-light fa-house-circle-check text-[50px]"></i>
+    <h3 class="font-semibold ">Our Properties</h3>
+    <p class="text-[#00000080] w-[55%] md:w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, accusamus.</p>
+    <button class=" border-b-2  border-b-[#00204a] m-auto w-fit">Learn More</button>
+</div>
+<div class="mb-[30px]">
+<div class="flex flex-col gap-3">
+<i class="fa-thin fa-buildings text-[50px]"></i>
+    <h3 class="font-semibold ">Property for Sale</h3>
+    <p class="text-[#00000080] w-[55%] md:w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, accusamus.</p>
+    <button class=" border-b-2  border-b-[#00204a] m-auto w-fit">Learn More</button>
+</div>
+</div>
+<div class="mb-[30px]">
+<div class="flex flex-col gap-3">
+    <i class="fa-light fa-house-user text-[50px]"></i>
+    <h3 class="font-semibold ">Real Estate Agent</h3>
+    <p class="text-[#00000080] w-[55%] md:w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, accusamus.</p>
+    <button class=" border-b-2  border-b-[#00204a] m-auto w-fit">Learn More</button>
+</div>
+</div>
+<div>
+<div class="flex flex-col gap-3">
+   <i class="fa-thin fa-apartment text-[50px]"></i>
+    <h3 class="font-semibold ">House for Sale</h3>
+    <p class="text-[#00000080] w-[55%] md:w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, accusamus.</p>
+    <button class=" border-b-2  border-b-[#00204a] m-auto w-fit">Learn More</button>
+</div>
+</div>
+                </div>
             </div>
+
         </div>
 
 
@@ -168,17 +197,15 @@
             breakpoints: {
                 0: {
                     slidesPerView: 1,
-                    spaceBetween: 0,
+                    spaceBetween: 10,
                 },
                 785: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 25,
                 }
             }
 
         });
-
-
     </script>
 </body>
 
