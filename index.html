@@ -134,8 +134,23 @@
 </div>
                 </div>
             </div>
+            <div class="container mx-auto py-[4rem] px-3">
+                <div class="flex justify-center md:justify-between">
+           <h1 class="font-semibold text-3xl mb-[3rem]  text-[#00204a]">Customer Says</h1>
+           <button></button>
+           <button></button>
+                </div>
+                  <div class="swiper mySwiper3">
+    <div class="swiper-wrapper swiper3 mb-[4rem]">
+
+
+    </div>
+    <div class="swiper-pagination "></div>
+  </div>
+     
+            </div>
     </main>
-    <footer class="bg-[#efefef]  py-[70px] text-center md:text-left">
+    <footer class="bg-[#efefef] text-[#777] py-[70px] text-center md:text-left">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3">
                 <div class="flex flex-col gap-6 ">
@@ -190,9 +205,10 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/app.js"></script>
     <script>
-        let swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper(".mySwiper", {
             loop: true,
             slidesPerView: 1,
             autoplay: {
@@ -200,9 +216,7 @@
             },
             speed: 1000
         });
-        let swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        const swiper2 = new Swiper(".mySwiper2", {
             loop: true,
             autoplay: {
                 delay: 4000
@@ -214,13 +228,34 @@
                     slidesPerView: 1,
                     spaceBetween: 10,
                 },
-                785: {
+                786: {
                     slidesPerView: 3,
                     spaceBetween: 25,
                 }
             }
 
         });
+            const swiper3 = new Swiper(".mySwiper3", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      loop:true,
+autoplay:{
+    delay:4000
+},
+speed:800,
+      breakpoints:{
+        0:{
+            slidesPerView:1,
+            spaceBetween:10,
+        },
+        786:{
+            slidesPerView:3,
+                spaceBetween:20,
+        }
+      }
+    });
     </script>
 </body>
 

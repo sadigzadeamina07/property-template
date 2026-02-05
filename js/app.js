@@ -30,31 +30,52 @@ window.addEventListener("load", () => {
         el.classList.add("opacity-100", "translate-y-0");
     }, 900);
 })
-window.addEventListener("scroll", ()=>{
-    const fixedheader=document.getElementById('fixedheader')
-    if(window.scrollY>120) {
-          fixedheader.classList.remove("scale-100");
-                fixedheader.classList.add("scale-110");
+window.addEventListener("scroll", () => {
+    const fixedheader = document.getElementById('fixedheader')
+    if (window.scrollY > 120) {
+        fixedheader.classList.remove("scale-100");
+        fixedheader.classList.add("scale-110");
     }
-        else {
-            
- fixedheader.classList.remove("scale-110");
- fixedheader.classList.add("scale-100");   }
+    else {
+        fixedheader.classList.remove("scale-110");
+        fixedheader.classList.add("scale-100");
+    }
 })
-    let menubar=document.querySelector('.menubar')
-    let menu=document.querySelector('#menuofbar')
-function openthebar(){ 
-         menu.classList.remove('hidden') 
-      setTimeout(()=>{
-             menu.classList.remove('translate-x-full') 
-       menu.classList.add('translate-x-0') 
-    },500)
+let menubar = document.querySelector('.menubar')
+let menu = document.querySelector('#menuofbar')
+function openthebar() {
+    menu.classList.remove('hidden')
+    setTimeout(() => {
+        menu.classList.remove('translate-x-full')
+        menu.classList.add('translate-x-0')
+    }, 500)
 
 
-    }
-function closethebar(){ 
-     menu.classList.add('translate-x-full') 
-    setTimeout(()=>{
-menu.classList.add('hidden')
-    },1000)
- }
+}
+function closethebar() {
+    menu.classList.add('translate-x-full')
+    setTimeout(() => {
+        menu.classList.add('hidden')
+    }, 1000)
+}
+document.addEventListener("DOMContentLoaded", () => {
+  Customers.map(item => {
+    document.querySelector('.swiper3').innerHTML += `
+      <div class="swiper-slide">
+        <div class="px-[20px]  ">
+          <img src="${item.image}" class="rounded-full w-25 h-25 mb-[24px]"/> 
+          <div class="flex gap-1 text-[12px] mb-1 text-[#ffc107]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 class="text-[#00204a] mb-[24px] text-xl  font-semibold">${item.name}</h3>
+          <p class="mb-[20px]">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+     <p class="text-[#00000080]">Designer, Co-founder</p>
+          </div>
+      </div>
+    `
+  })
+})
