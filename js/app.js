@@ -39,10 +39,7 @@ window.addEventListener("scroll", ()=>{
         else {
             
  fixedheader.classList.remove("scale-110");
- fixedheader.classList.add("scale-100");
-        }
-
-
+ fixedheader.classList.add("scale-100");   }
 })
     let menubar=document.querySelector('.menubar')
     let menu=document.querySelector('#menuofbar')
