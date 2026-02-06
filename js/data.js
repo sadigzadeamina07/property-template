@@ -17,5 +17,16 @@ const Customers = [
   }
 ];
 const Agents=[
-  
+    {
+    name: "James Doe",
+    image: "../img/person_1min.jpg"
+  },
+  {
+    name: "Jean Smith",
+    image: "../img/person_2min.jpg"
+  },
+  {
+    name: "Alicia Huston",
+    image: "../img/person_3min.jpg"
+  }
 ]

@@ -78,4 +78,25 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `
   })
+  Agents.map((item)=>{
+    document.querySelector('.cards').innerHTML+=`
+    <div class=" bg-white">
+    <img src="${item.image}" class="rounded-full -mt-[50px] w-25 h-25 mx-auto" />
+    <div class="p-[30px]">
+     <a href="" class="text-lg font-semibold">${item.name}</a>
+    <p class="text-[#888] mb-[1rem]">Real Estate Agent</p>
+    <p  class="text-[#00000080] mb-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officiis inventore cumque tenetur laboriosam, minus culpa doloremque odio, neque molestias?</p>
+   <div class="flex gap-5 justify-center">
+   <i class="fa-brands fa-twitter text-white bg-[#00204a] border-2 hover:border-[#00204a]  hover:bg-white hover:text-[#00204a] p-3 rounded-full"></i>
+   <i class="fa-brands fa-facebook-f text-white bg-[#00204a] border-2 hover:border-[#00204a]  hover:bg-white hover:text-[#00204a] py-3 px-[15px] rounded-full"></i>
+   <i class="fa-brands fa-linkedin-in text-white bg-[#00204a] border-2 hover:border-[#00204a]  hover:bg-white hover:text-[#00204a] py-3 px-[13px] rounded-full"></i>
+   <i class="fa-brands fa-instagram text-white bg-[#00204a] border-2 hover:border-[#00204a]  hover:bg-white hover:text-[#00204a] py-3 px-[13px] rounded-full"></i>
+   </div>
+    </div>
+   
+    </div>
+    `
+  })
+
 })
+
