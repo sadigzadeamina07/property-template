@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
    <i class="fa-brands fa-instagram text-white bg-[#00204a] border-2 hover:border-[#00204a]  hover:bg-white hover:text-[#00204a] py-3 px-[13px] rounded-full"></i>
    </div>
     </div>
-   
+    
     </div>
     `
   })
