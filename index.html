@@ -7,7 +7,9 @@
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
         .container {
@@ -24,7 +26,7 @@
                 <div class="flex justify-between items-center px-4 py-5 mx-[5px]">
                     <h1 class="text-2xl font-semibold  ml-[20px] md:ml-0">Property</h1>
                     <div class="md:hidden flex  mr-[20px] md:ml-0 ">
-                        <i onclick="openthebar()" id="menubar" class="fa-light fa-bars text-3xl"></i>
+                        <i onclick="openthebar()" id="menubar" class="fa-solid fa-bars text-2xl"></i>
                     </div>
                     <ul class="flex gap-8 hidden md:flex">
                         <li><a href="">Home</a></li>
@@ -94,7 +96,8 @@
             </div>
         </div>
         <div class="py-[30px]  bg-[#00204a0d]">
-            <div class="grid   gap-5  px-5 lg:px-2 text-[#00204a] container mx-auto text-center grid-cols-1 md:grid-cols-2  lg:grid-cols-4">
+            <div
+                class="grid   gap-5  px-5 lg:px-2 text-[#00204a] container mx-auto text-center grid-cols-1 md:grid-cols-2  lg:grid-cols-4">
                 <div class="flex  bg-white flex-col py-10 px-2 gap-3 mb-[30px]">
                     <i class="fa-light fa-house-circle-check text-[50px]"></i>
                     <h3 class="font-semibold ">Our Properties</h3>
@@ -160,8 +163,13 @@
                 <div class="grid grid-cols-1  md:grid-cols-2 mb-[40px]">
 
                     <div class="flex flex-col  my-[50px] md:my-[30px] gap-12">
+
+
                         <div class=" flex gap-4 items-center">
-                            <i class="fa-solid fa-house px-7 py-[29px] text-lg rounded-full hover:border-2 hover:border-[#00204a] bg-[#efefef]"></i>
+                            <div
+                                class=" py-5 px-[22px] w-fit text-lg rounded-full hover:border-2 hover:border-[#00204a] bg-[#efefef]">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
                             <div>
                                 <h3 class="text-[18px]  text-[#00204a] font-semibold ">2M Properties</h3>
                                 <p class="text-[#00000080] w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -170,7 +178,10 @@
 
                         </div>
                         <div class=" flex gap-4 items-center">
-                            <i class="fa-solid fa-user px-7 py-[27px]  text-xl hover:border-2 hover:border-[#00204a] rounded-full bg-[#efefef]"></i>
+                            <div
+                                class=" py-5 px-[22px] w-fit text-lg rounded-full hover:border-2 hover:border-[#00204a] bg-[#efefef]">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
                             <div>
                                 <h3 class="text-[18px]  text-[#00204a] font-semibold"> Top Rated Agents</h3>
                                 <p class="text-[#00000080] w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -180,7 +191,15 @@
 
                         </div>
                         <div class=" flex gap-4 items-center">
-                            <i class="fa-solid fa-shield-quartered p-7 text-xl rounded-full hover:border-2 hover:border-[#00204a] bg-[#efefef]"></i>
+                            <div
+                                class=" p-5 w-fit text-lg rounded-full hover:border-2 hover:border-[#00204a] bg-[#efefef]">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <svg fill="#000000" width="30px" height="30px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.995 6.9a.998.998 0 0 0-.548-.795l-8-4a1 1 0 0 0-.895 0l-8 4a1.002 1.002 0 0 0-.547.795c-.011.107-.961 10.767 8.589 15.014a.987.987 0 0 0 .812 0c9.55-4.247 8.6-14.906 8.589-15.014zM12 19.897V12H5.51a15.473 15.473 0 0 1-.544-4.365L12 4.118V12h6.46c-.759 2.74-2.498 5.979-6.46 7.897z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h3 class="text-[18px]  text-[#00204a] font-semibold">Legit Properties</h3>
                                 <p class="text-[#00000080] w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -204,7 +223,8 @@
         <div class="bg-[#f8f9fa]">
             <div class="container text-center mx-auto py-[4rem] px-[12px]">
                 <h1 class="text-[#00204a] text-[36px] mb-[16px] font-semibold">Our Agents</h1>
-                <p class="text-[#00000080] mb-[80px] md:w-[50%] w-[90%] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                <p class="text-[#00000080] mb-[80px] md:w-[50%] w-[90%] mx-auto">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Numquam
                     enim pariatur similique debitis vel nisi qui reprehenderit totam? Quod maiores.</p>
 
                 <div class="cards flex justify-between flex-wrap lg:flex-nowrap gap-20 lg:gap-7"></div>
@@ -253,12 +273,29 @@
                         <li class=" hover:text-black"><a href="">Contact us</a></li>
                     </ul>
                     <div class="flex gap-3 justify-center text-sm  md:justify-start">
-                        <i class="fa-brands fa-instagram p-3  rounded-[40%] bg-[#ccc]"></i>
-                        <i class="fa-brands fa-twitter p-3   rounded-[40%] bg-[#ccc]"></i>
-                        <i class="fa-brands fa-facebook-f py-3 px-[15px] rounded-[40%] bg-[#ccc]"></i>
-                        <i class="fa-brands fa-linkedin-in py-3 px-[13px]   rounded-[40%] bg-[#ccc]"></i>
-                        <i class="fa-brands fa-pinterest p-3  rounded-[40%] bg-[#ccc]"></i>
-                        <i class="fa-light fa-basketball p-3   rounded-[40%] bg-[#ccc]"></i>
+                        <div class="bg-[#ccc] p-3   flex items-center rounded-[40%]">
+                            <i class="fa-brands fa-instagram  "></i>
+
+                        </div>
+                        <div class="bg-[#ccc] p-3   flex items-center rounded-[40%]">
+                            <i class="fa-brands fa-twitter "></i>
+
+                        </div>
+                        <div class="bg-[#ccc] p-3   flex items-center rounded-[40%]">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </div>
+                        <div class="bg-[#ccc] p-3   flex items-center rounded-[40%]">
+
+                            <i class="fa-brands fa-linkedin-in "></i>
+
+                        </div>
+                        <div class="bg-[#ccc] p-3   flex items-center rounded-[40%]">
+                            <i class="fa-brands fa-pinterest "></i>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
